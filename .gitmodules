@@ -1,3 +1,0 @@
-[submodule "OpenFOAM-8"]
-	path = OpenFOAM-8
-	url = https://github.com/OpenFOAM/OpenFOAM-8.git
