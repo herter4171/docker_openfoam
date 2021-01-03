@@ -15,7 +15,9 @@ RUN apt-get install -y \
     libopenmpi-dev \
     zlib1g-dev \
     scotch \
+    libscotch-dev \
     ptscotch \
+    libptscotch-dev \
     paraview
 
 # Alternate can be specified with --build-arg flag
