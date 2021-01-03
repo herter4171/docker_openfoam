@@ -12,7 +12,9 @@ apt-get install -y \
     flex \
     mpich \
     libopenmpi-dev \
-    zlib1g-dev
+    zlib1g-dev \
+    scotch \
+    ptscotch
 
 # Alternate can be specified with --build-arg flag
 ARG OF_VER=OpenFOAM-8
