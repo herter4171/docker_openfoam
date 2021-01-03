@@ -3,8 +3,9 @@ FROM ubuntu:20.04
 # User can't set timezones and things during build
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update -y ; \
-apt-get install -y \
+# Install apt packages
+RUN apt-get update -y
+RUN apt-get install -y \
     build-essential \
     git \
     paraview \
@@ -14,7 +15,8 @@ apt-get install -y \
     libopenmpi-dev \
     zlib1g-dev \
     scotch \
-    ptscotch
+    ptscotch \
+    paraview
 
 # Alternate can be specified with --build-arg flag
 ARG OF_VER=OpenFOAM-8
